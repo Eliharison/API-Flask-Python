@@ -10,8 +10,7 @@ if __name__ == '__main__':
         if 'games' not in mongo.db.list_collection_names():
             game = Game(
                 title = '',
-                genre = '',
-                platform = '',
+                descriptions = '',
                 year = 0
             )
             GameService.add_game(game)

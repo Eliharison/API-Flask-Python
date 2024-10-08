@@ -3,11 +3,10 @@ from marshmallow import Schema, fields
 
 class GameSchema(ma.Schema):
     class Meta:
-        fields = ('_id', 'title', 'genre', 'platform', 'year')
+        fields = ('_id', 'title', "descriptions", 'year')
     _id = fields.Str()
     title = fields.Str(required=True)
-    genre = fields.Str(required=True)
-    platform = fields.Str(required=True)
+    descriptions = fields.Dict(required=True)
     year = fields.Int(required=True)
     
     
