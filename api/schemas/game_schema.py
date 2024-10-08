@@ -8,6 +8,6 @@ class GameSchema(ma.Schema):
     title = fields.Str(required=True)
     genre = fields.Str(required=True)
     platform = fields.Str(required=True)
-    year = fields.Str(required=True)
+    year = fields.Int(required=True)
     
     
